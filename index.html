@@ -13,27 +13,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="vanillaa-weather-app">
-        <h1>New York</h1>
-        <ul>
-          <li>Friday 9:00</li>
-          <li>clear</li>
-        </ul>
+      <div class="weather-app-wrapper">
+        <div class="vanillaa-weather-app">
+          <div class="overview">
+            <h1>New York</h1>
 
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="clear"
-            />
-            12 °C|°F
-          </div>
-          <div class="col-6">
             <ul>
-              <li>precipitation: 0%</li>
-              <li>humidity: 90%</li>
-              <li>wind speed: 30 km/h</li>
+              <li>Friday 9:00</li>
+              <li>clear</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <span class="d-flex" class="weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="clear"
+                />
+              </span>
+              <span class="float-left" class="data">
+                <span class="main-temperature">12</span
+                ><span class="weather-temperature-units"> °C | °F </span>
+              </span>
+            </div>
+            <div class="col-6">
+              <div class="more-data">
+                <ul>
+                  <li>precipitation: 0%</li>
+                  <li>humidity: 90%</li>
+                  <li>wind speed: 30 km/h</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <small>

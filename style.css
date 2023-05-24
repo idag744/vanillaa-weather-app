@@ -1,6 +1,4 @@
 .vanillaa-weather-app {
-  max-width: 600px;
-  margin: 30 auto;
   padding: 20px;
   margin-top: 30px;
   border: 1px solid #939496;
@@ -28,4 +26,37 @@ li {
   font-weight: 100;
   line-height: 19px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+small {
+  margin-left: 30px;
+}
+.overview {
+  margin-bottom: 40px;
+}
+
+.weather-temperature img {
+  margin-right: 20px;
+  float: 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.main-temperature {
+  font-size: 64px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.data {
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.weather-temperature-units {
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 30px;
 }

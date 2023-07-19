@@ -40,9 +40,9 @@ small {
 
 .weather-temperature img {
   margin-right: 20px;
-  float: 64px;
-  width: 64px;
-  height: 64px;
+  float: 32px;
+  width: 32px;
+  height: 32px;
 }
 
 .main-temperature {
@@ -58,5 +58,5 @@ small {
 .weather-temperature-units {
   font-size: 16px;
   position: relative;
-  margin-bottom: 30px;
+  top: -36px;
 }

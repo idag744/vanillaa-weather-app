@@ -7,10 +7,11 @@ function showTemperature(response) {
 
   let weatherCondition = document.querySelector("#description");
   weatherCondition.innerHTML = response.data;
+  axios.get(apiurl).then(showTemperature);
 }
 
-let apikey = "52ceb403b71724e4ec9a598d80f9ebaa";
+let city = document.querySelector("#cityInput");
 
-let apiurl = `https://api.openweathermap.org/data/2.5/weather?q=new York&appid=${apikey}`;
+let apikey = "193326794b34c5f0cbbc22b088ed5be5";
 
-axios.get(apiurl).then(showTemperature);
+let apiurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;

@@ -17,13 +17,13 @@
       <div class="weather-app-wrapper">
         <div class="vanillaa-weather-app">
           <div class="overview">
-            <form class="form-inline">
+            <form id="search-form" class="form-inline">
               <div class="row">
                 <div class="col-6">
                   <input
                     type="text"
                     class="form-control"
-                    id="cityInput"
+                    id="city-input"
                     placeholder="Type a City ..."
                   />
                 </div>
@@ -47,8 +47,13 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <img id="icon" src="" alt="" />
-
+              <span class="d-flex" class="weather-temperature">
+                <img
+                  id="icon"
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  alt="rain"
+                />
+              </span>
               <span class="float-left" class="data">
                 <span class="main-temperature" id="temperature"> </span
                 ><span class="weather-temperature-units"> °C | °F </span>
